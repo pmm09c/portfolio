@@ -32,29 +32,36 @@ export const projectsData = [
   {
     id: uuidv1(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    title: 'Tensor2Tensor Translation for Computer Vision Applications',
+    info:
+      "Here are some samples from computer vision and medical imaging projects i've done. The first project is an image to image translation project used for image enchancement, specifically dehazing. The idea is to have a small network which can help improve image quality before being passed into a secondary network for say object detection. This could help the input data look more like the training data and potentially improve reliability for things like self driving cars.",
+    info2:
+      'The second project uses self-supervision, a technique which trains a network on a surrogate task without the need for labels, to improve neuron segmentation performance in a 3D volume. The auxilary task was to reorder the slices of the 3D scan volume and predict the true ordering of the slices. Ultimately, doing this auxilary task first leads to better performance when fine tuning on the actual segmenation task.',
+    url:
+      'http://openaccess.thecvf.com/content_CVPRW_2019/html/NTIRE/Morales_Feature_Forwarding_for_Efficient_Single_Image_Dehazing_CVPRW_2019_paper.html',
+    repo: 'https://github.com/pmm09c/ntire-dehazing', // if no repo, the button will not show up
+  },
+  {
+    id: uuidv1(),
+    img: 'project.jpg',
+    title: 'Coordination Graphs for Multi-Agent Reinforcement Learning and Planning',
+    info:
+      'These projects came from some work trying to do better planning in independent multi-agent settings. The first project used something known as monte-carlo tree search to optimize several agents in a fully cooperative task. The idea here was to use something known as a coordination graph to know which agents to compute the joint optimal action for. In other words, the coordination graph says which agents need to coordinate at the current moment in time. Without the coordination graph, it would be too costly to try and optimize over all agents jointly. The coordination graph is dynamic and driven by heuristics like distance and the joint action optimization is done dynamically as the graph changes.',
+    info2:
+      "The second project looked at the setting where maybe we don't know what the best coordination graph looks like. In that case, we want learn the coordination graph that works best given the state of the environment. For this project, we came up with something known as Deep Implicit Coordination Graphs, which introduces a fully differentiable module which can be incorporated in multi-agent reinforcement learning methods to implicitly reason about joint-actions. DICG essentially learns how to build up a dynamic coordination graph from experience.",
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Airforce Accelerator',
+    info:
+      "For these projects, we were asked to work with MIT and propose cutting edge AI projects. The first project I'm working on is the earth intelligence engine. Here we're trying to utilize climate and weather data to foreward predict future earth conditions and visualize the effects. This will help decision makers not only make near term safety decisions based on weather data, but also hopefully motivate more proactive measures to address climate change.",
+    info2:
+      'The second project is using something known as Scientific Machine Learning, a form of machine learning which attempts to maintain as much structure from the physics of a problem in the learning through fully differentiable code, to try and navigate the earth using only the magnetic field generated from the earths crust.',
+    url: 'https://ai-accelerator.csail.mit.edu/projects/',
+    repo: 'https://github.com/orgs/MIT-AI-Accelerator/teams', // if no repo, the button will not show up
   },
 ];
 
