@@ -49,8 +49,8 @@ export const projectsData = [
       'These projects came from some work trying to do better planning in independent multi-agent settings. The first project used something known as monte-carlo tree search to optimize several agents in a fully cooperative task. The idea here was to use something known as a coordination graph to know which agents to compute the joint optimal action for. In other words, the coordination graph says which agents need to coordinate at the current moment in time. Without the coordination graph, it would be too costly to try and optimize over all agents jointly. The coordination graph is dynamic and driven by heuristics like distance and the joint action optimization is done dynamically as the graph changes.',
     info2:
       "The second project looked at the setting where maybe we don't know what the best coordination graph looks like. In that case, we want learn the coordination graph that works best given the state of the environment. For this project, we came up with something known as Deep Implicit Coordination Graphs, which introduces a fully differentiable module which can be incorporated in multi-agent reinforcement learning methods to implicitly reason about joint-actions. DICG essentially learns how to build up a dynamic coordination graph from experience.",
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    url: 'https://anonymous.4open.science/r/9ea4bbf9-0777-4707-afcc-d3d6b22ba54a/',
+    repo: ' https://anonymous.4open.science/r/9ea4bbf9-0777-4707-afcc-d3d6b22ba54a/', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
