@@ -31,7 +31,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'image2image.png',
+    img: 'image2image.jpg',
     title: 'Tensor2Tensor Translation for Computer Vision Applications',
     info:
       "Here are some samples from computer vision and medical imaging projects I've done. The first project is an image to image translation project used for image enchancement, specifically dehazing. The idea is to have a small network which can help improve image quality before being passed into a secondary network for say object detection. This could help the input data look more like the training data and potentially improve reliability for things like self driving cars.",
@@ -43,7 +43,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: 'planning.png',
+    img: 'coordination.jpg',
     title: 'Coordination Graphs for Multi-Agent Reinforcement Learning and Planning',
     info:
       'These projects came from some work trying to do better planning in independent multi-agent settings. The first project used something known as monte-carlo tree search to optimize several agents in a fully cooperative task. The idea here was to use something known as a coordination graph to know which agents to compute the joint optimal action for. In other words, the coordination graph says which agents need to coordinate at the current moment in time. Without the coordination graph, it would be too costly to try and optimize over all agents jointly. The coordination graph is dynamic and driven by heuristics like distance and the joint action optimization is done dynamically as the graph changes.',
@@ -54,7 +54,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: 'EIE.png',
+    img: 'aiia.jpg',
     title: 'Airforce Accelerator',
     info:
       "For these projects, we were asked to work with MIT and propose cutting edge AI projects. The first project I'm working on is the earth intelligence engine. Here we're trying to utilize climate and weather data to foreward predict future earth conditions and visualize the effects. This will help decision makers not only make near term safety decisions based on weather data, but also hopefully motivate more proactive measures to address climate change.",
